@@ -1,15 +1,22 @@
-<div>
-    <hr />
+import { Component, Input } from "@angular/core";
+// import { EventsListComponent } from './events-list.component'
+
+@Component({
+  selector: "event-thumbnail",
+  template: `
     <div class="well-hoverwell thumbnail">
-      <h1>Upcoming Andela Events</h1>
       <h2>{{ event.name }}</h2>
       <div>Date: {{ event.date }}</div>
       <div>Time: {{ event.time }}</div>
-      <div>Price: {{ event.price }}</div>
+      <div>Price: \${{ event.price }}</div>
       <div>
         <div>Location: {{ event.location.address }}</div>
         <span>&nbsp;</span>
         <span>{{ event.location.city }}, {{ event.location.country }}</span>
       </div>
     </div>
-  </div>
+  `
+})
+export class EventThumbnailComponent {
+  @Input() event: any;
+}
