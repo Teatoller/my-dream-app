@@ -24,7 +24,7 @@ export class EventsListComponent {
       price: 599.99,
       imageUrl: "/assets/images/angularconnect-shield.png",
       location: {
-        address: "1057",
+        address: "Cbd",
         city: "Nairobi",
         country: "Kenya"
       },
@@ -101,11 +101,7 @@ export class EventsListComponent {
       time: "9:00 am",
       price: 950.0,
       imageUrl: "/assets/images/ng-nl.png",
-      location: {
-        address: "Kabarak High School",
-        city: "Nakuru",
-        country: "Kenya"
-      },
+      onlineUrl: 'http://www.andela.com',
       sessions: [
         {
           id: 1,
